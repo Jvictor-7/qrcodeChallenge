@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
+:root {
+    --container-color: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --bg-color: hsl(212, 45%, 80%);
+    --shadow-color: hsl(220, 15%, 55%);
+    --h2-color: hsl(218, 44%, 22%);
+    --p-color: rgb(119, 119, 119);
+}
+
 * {
     font-family: 'Outfit', sans-serif;
     margin: 0;
@@ -7,7 +16,7 @@
 }
 
 body {
-    background-color: hsl(212, 45%, 80%);
+    background-color: var(--bg-color);
 }
 
 main {
@@ -25,9 +34,9 @@ main {
     gap: 10px;
     width: 357px;
     height: 560px;
-    box-shadow: 10px 10px 10px hsl(220, 15%, 55%);
+    box-shadow: 0.5em 0.5em 1em var(--shadow-color);
     border-radius: 15px;
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--container-color);
 }
 
 .imageQr {
@@ -48,7 +57,7 @@ main {
 }
 
 .textDiv h2 {
-    color: hsl(218, 44%, 22%);
+    color: var(--h2-color);
     font-weight: 700;
 }
 
@@ -56,5 +65,5 @@ main {
     font-weight: 400;
     font-size: 15px;
     padding: 5px 30px;
-    color: #ccc;
+    color: var(--p-color);
 }
